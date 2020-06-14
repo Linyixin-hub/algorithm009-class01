@@ -63,7 +63,8 @@ while left <= right:
             if abs(cur - pre) < 1e-6:
                 return int(cur)
 
-作者：liweiwei1419
-链接：https://leetcode-cn.com/problems/sqrtx/solution/er-fen-cha-zhao-niu-dun-fa-python-dai-ma-by-liweiw/
-来源：力扣（LeetCode）
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+四步做题法
+1、题目边界
+2、所有办法
+3、找出最优
+4、模版测试
