@@ -42,3 +42,28 @@ def BFS(graph, start, end):
 10.1 贪心算法
 短期的贪心算法长期可能达不到最优。
 可以从后往前贪心，或者从局部贪心。
+11.1 二分查找
+前提：1、单调；2、存在上下界；3、能通过索引访问
+# Python
+left, right = 0, len(array) - 1 
+while left <= right: 
+	  mid = (left + right) / 2 
+	  if array[mid] == target: 
+		    # find the target!! 
+		    break or return result 
+	  elif array[mid] < target: 
+		    left = mid + 1 
+	  else: 
+		    right = mid - 1
+牛顿迭代法
+    cur = 1
+        while True:
+            pre = cur
+            cur = (cur + x / cur) / 2
+            if abs(cur - pre) < 1e-6:
+                return int(cur)
+
+作者：liweiwei1419
+链接：https://leetcode-cn.com/problems/sqrtx/solution/er-fen-cha-zhao-niu-dun-fa-python-dai-ma-by-liweiw/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
