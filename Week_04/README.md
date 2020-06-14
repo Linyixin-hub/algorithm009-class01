@@ -1,5 +1,5 @@
 学习笔记
-#9.1.1深度优先（优先下下一层访问）	递归写法
+# 9.1.1深度优先（优先下下一层访问）	递归写法
 visited = set() 
 def dfs(node, visited):
     if node in visited: # terminator
