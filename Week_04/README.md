@@ -1,5 +1,5 @@
 学习笔记
-9.1.1深度优先（优先下下一层访问）	递归写法
+#9.1.1深度优先（优先下下一层访问）	递归写法
 visited = set() 
 def dfs(node, visited):
     if node in visited: # terminator
@@ -25,8 +25,8 @@ def DFS(self, tree):
 		stack.push(nodes) 
 	# other processing work 
 	...
-9.1.2 广度优先（优先访问同一层所有子节点）
-# Python
+# 9.1.2 广度优先（优先访问同一层所有子节点）
+--Python
 def BFS(graph, start, end):
     visited = set()
 	queue = [] 
@@ -39,12 +39,12 @@ def BFS(graph, start, end):
 		queue.push(nodes)
 	# other processing work 
 	...	
-10.1 贪心算法
+# 10.1 贪心算法
 短期的贪心算法长期可能达不到最优。
 可以从后往前贪心，或者从局部贪心。
-11.1 二分查找
+# 11.1 二分查找
 前提：1、单调；2、存在上下界；3、能通过索引访问
-# Python
+-- Python
 left, right = 0, len(array) - 1 
 while left <= right: 
 	  mid = (left + right) / 2 
@@ -69,7 +69,7 @@ while left <= right:
 3、找出最优
 4、模版测试
 
-期中小结：
+# 期中小结：
 学习了一个月了，好的地方就是学到了一些方法论，另外虽然掌握的一般，但是坚持了下来，我知道一旦某一周作业没有提交，下一周估计就拜拜了。
 所以坚持很重要，至少知识点坚持听完了，有些理论的东西学到手了。
 1个月以来，对算法有了更加具体的了解，以前觉得算法有点神秘，有点不能结合实际，一个月下来只是能和别人讨论下算法。
